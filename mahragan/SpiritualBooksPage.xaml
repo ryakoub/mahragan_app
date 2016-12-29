@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="mahragan.SpiritualBooksPage"
+		Title="Spiritual Books" BackgroundImage="StMark_WM.jpg" >
+	<ContentPage.Content>
+    <ScrollView>
+      <StackLayout Spacing="0" Padding="0" Opacity="0.75">
+				<Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+						<RowDefinition Height="*"/>
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*"/>
+						<ColumnDefinition Width="*"/>
+					</Grid.ColumnDefinitions>
+					<Button StyleId = "kg"
+							Grid.Row="0"
+							Grid.Column="0"
+							Text="Kindergarden"  
+							VerticalOptions="CenterAndExpand" 
+							HorizontalOptions="CenterAndExpand" 
+							BorderColor="Maroon"
+							BorderRadius="10"
+							BorderWidth="2"
+							Clicked="displayPDF">
+					</Button>
+					<Button StyleId="gr12"
+							Grid.Row="0"
+							Grid.Column="1"
+							Text="Grades: 1-2"  
+							VerticalOptions="CenterAndExpand" 
+							HorizontalOptions="CenterAndExpand" 
+							BorderColor="Maroon"
+							BorderRadius="10"
+							BorderWidth="2"
+							Clicked="displayPDF">
+					</Button>
+					<Button StyleId="gr34"
+							Grid.Row="1"
+							Grid.Column="0"
+							Text="Grades: 3-4"  
+							VerticalOptions="CenterAndExpand" 
+							HorizontalOptions="CenterAndExpand" 
+							BorderColor="Maroon"
+							BorderRadius="10"
+							BorderWidth="2"
+							Clicked="displayPDF">
+					</Button>
+					<Button StyleId="gr56"
+							Grid.Row="1"
+							Grid.Column="1"
+							Text="Grades: 5-6"  
+							VerticalOptions="CenterAndExpand" 
+							HorizontalOptions="CenterAndExpand" 
+							BorderColor="Maroon"
+							BorderRadius="10"
+							BorderWidth="2"
+							Clicked="displayPDF">
+						</Button>
+					<Button StyleId="gr78"
+							Grid.Row="2"
+							Grid.Column="0"
+							Text="Grades: 7-8"  
+							VerticalOptions="CenterAndExpand" 
+							HorizontalOptions="CenterAndExpand" 
+							BorderColor="Maroon"
+							BorderRadius="10"
+							BorderWidth="2"
+							Clicked="displayPDF">
+						</Button>
+					<Button StyleId="gr912"
+							Grid.Row="2"
+							Grid.Column="1"
+							Text="Grades: 9-12"  
+							VerticalOptions="CenterAndExpand" 
+							HorizontalOptions="CenterAndExpand" 
+							BorderColor="Maroon"
+							BorderRadius="10"
+							BorderWidth="2"
+							Clicked="displayPDF">
+						</Button>
+				</Grid>
+
+      </StackLayout>
+    </ScrollView>
+	</ContentPage.Content>
+</ContentPage>
