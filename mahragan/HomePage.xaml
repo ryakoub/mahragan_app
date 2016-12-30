@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="mahragan.HomePage"
 		Title="Home" BackgroundImage="StMark_WM.jpg" >
 	<ContentPage.Content>
@@ -16,23 +16,32 @@
 				<RowDefinition Height="0.01*" />
 			</Grid.RowDefinitions>
 			<!--<BoxView Grid.Column="1" BackgroundColor="Yellow" />-->
-			<Label Grid.Row="0" Grid.ColumnSpan="3" Text="Welcome to Mahragan Alkeraza 2017" FontAttributes="Bold" FontSize="Small" TextColor="Teal" VerticalOptions="Center" HorizontalOptions="Center" />
+			<Label Grid.Row="0" Grid.ColumnSpan="3" Text="Welcome to Mahragan Alkeraza 2017" FontSize="14" FontAttributes="Bold" TextColor="Teal" VerticalOptions="Center" HorizontalOptions="Center" />
 			<!--<BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="Yellow" />-->
-			<Label Grid.Row="1" Grid.ColumnSpan="3" Text="مهرجان الكرازة ٢٠١٧" FontAttributes="Bold" FontSize="Small" TextColor="Teal" VerticalOptions="Center" HorizontalOptions="Center" />
+			<Label Grid.Row="1" Grid.ColumnSpan="3" Text="مهرجان الكرازة ٢٠١٧" FontAttributes="Bold" FontSize="14" TextColor="Teal" VerticalOptions="Center" HorizontalOptions="Center" />
 			<StackLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
 				<Grid RowSpacing="10" ColumnSpacing="10">
 					<Grid.ColumnDefinitions>
-						<ColumnDefinition Width="Auto" />
-						<ColumnDefinition Width="Auto" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
 					</Grid.ColumnDefinitions>
 					<Grid.RowDefinitions>
-						<RowDefinition Height="Auto" />
-						<RowDefinition Height="Auto" />
+						<RowDefinition Height="*" />
+						<RowDefinition Height=".2*" />
+						<RowDefinition Height=".2*" />
+						<RowDefinition Height="*" />
+						<RowDefinition Height=".2*" />
 					</Grid.RowDefinitions>
-					<Button StyleId="sBooks" Grid.Row="0" Grid.Column="0" BorderWidth="2" BorderColor="Green" BorderRadius="10"  Text="Spiritual Books" Clicked="getBooksView"/>
-					<Button StyleId="hymns" Grid.Row="0" Grid.Column="1"  BorderWidth="2" BorderColor="Maroon" BorderRadius="10"  Text="Coptic Hymns" Clicked="getHymnsView"/>
-					<Button StyleId="sports" Grid.Row="1" Grid.Column="0" BorderWidth="2"  BorderColor="Black" BorderRadius="10"  Text="Guidelines" Clicked="getGuidelinesView"/>
-					<Button StyleId="coptic" Grid.Row="1" Grid.Column="1" BorderWidth="2"  BorderColor="Blue" BorderRadius="10" Text="Coptic Language" Clicked="getBooksView"/>
+						<Label Grid.Row="1" Grid.Column="1" Text="Spiritual Books" HorizontalOptions="Center" FontSize="8"/>
+						<Label Grid.Row="1" Grid.Column="2" Text="Coptic Hymns" HorizontalOptions="Center" FontSize="8"/>
+						<Label Grid.Row="4" Grid.Column="1" Text="Rules &amp; Guidelines" HorizontalOptions="Center" FontSize="8"/>
+						<Label Grid.Row="4" Grid.Column="2" Text="Coptic Language" HorizontalOptions="Center" FontSize="8"/>
+					<Button StyleId="sBooks" Image="stMary.gif" BorderRadius="15" Grid.Row="0" Grid.Column="1" BorderWidth="2" BackgroundColor="Silver" BorderColor="White" Clicked="getBooksView"/>
+					<Button StyleId="hymns" Image="hymns_icon" Grid.Row="0" Grid.Column="2" BorderWidth="2" BackgroundColor="White" BorderColor="White" BorderRadius="15"  Clicked="getHymnsView"/>
+					<Button StyleId="sports" Image="guidelines" Grid.Row="3" Grid.Column="1" BorderWidth="2"  BorderColor="Silver"  BackgroundColor="Silver" BorderRadius="15"   Clicked="getGuidelinesView"/>
+					<Button StyleId="coptic" Image="alpha" Grid.Row="3" Grid.Column="2" BorderWidth="2" BackgroundColor="White" BorderColor="White" BorderRadius="15" Clicked="getBooksView"/>
 				</Grid>
 				</StackLayout>
 		</Grid>

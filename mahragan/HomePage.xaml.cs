@@ -16,7 +16,8 @@ namespace mahragan
 				Text = "St. Mark Festival\nChicago Land and Midwest Coptic Churches\nمهرجان الكرازة",
 				LineBreakMode = LineBreakMode.WordWrap,
 				HorizontalTextAlignment=TextAlignment.Center,
-				TextColor=Color.White
+				TextColor=Color.White,
+				FontSize = 18
 			};
 
 			var headerBox = new BoxView { Color = Color.Maroon };

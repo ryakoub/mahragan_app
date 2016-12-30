@@ -154,6 +154,21 @@
     <BundleResource Include="..\Assets\01_Kindergarten_Final_2016.pdf">
       <Link>Resources\PDFBooks\01_Kindergarten_Final_2016.pdf</Link>
     </BundleResource>
+    <BundleResource Include="..\Assets\hymns_icon.png">
+      <Link>Resources\hymns_icon.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Assets\bible.png">
+      <Link>Resources\bible.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Assets\alpha.png">
+      <Link>Resources\alpha.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Assets\guidelines.png">
+      <Link>Resources\guidelines.png</Link>
+    </BundleResource>
+    <BundleResource Include="..\Assets\stMary.gif">
+      <Link>Resources\stMary.gif</Link>
+    </BundleResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.3.175\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.3.175\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
