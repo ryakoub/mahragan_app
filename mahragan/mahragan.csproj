@@ -41,6 +41,9 @@
     <EmbeddedResource Include="WebViewPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Include="GuidelinesPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -58,6 +61,9 @@
     </Compile>
     <Compile Include="WebViewPage.xaml.cs">
       <DependentUpon>WebViewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GuidelinesPage.xaml.cs">
+      <DependentUpon>GuidelinesPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

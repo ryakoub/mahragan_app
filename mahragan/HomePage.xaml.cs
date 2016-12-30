@@ -50,5 +50,6 @@ namespace mahragan
 		}
 		async void getBooksView(object sender, EventArgs e) { await Navigation.PushAsync(new SpiritualBooksPage()); }
 		async void getHymnsView(object sender, EventArgs e) { await Navigation.PushAsync(new HymnsPage()); }
+		async void getGuidelinesView(object sender, EventArgs e) { await Navigation.PushAsync(new GuidelinesPage()); }
 	}
 }

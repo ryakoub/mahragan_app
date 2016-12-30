@@ -16,7 +16,7 @@
 				<RowDefinition Height="0.01*" />
 			</Grid.RowDefinitions>
 			<!--<BoxView Grid.Column="1" BackgroundColor="Yellow" />-->
-			<Label Grid.Row="0" Grid.ColumnSpan="3" Text="Welcome to Mahragan Alkeraza 2017" FontSize="Small" TextColor="Teal" VerticalOptions="Center" HorizontalOptions="Center" />
+			<Label Grid.Row="0" Grid.ColumnSpan="3" Text="Welcome to Mahragan Alkeraza 2017" FontAttributes="Bold" FontSize="Small" TextColor="Teal" VerticalOptions="Center" HorizontalOptions="Center" />
 			<!--<BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="Yellow" />-->
 			<Label Grid.Row="1" Grid.ColumnSpan="3" Text="مهرجان الكرازة ٢٠١٧" FontAttributes="Bold" FontSize="Small" TextColor="Teal" VerticalOptions="Center" HorizontalOptions="Center" />
 			<StackLayout Grid.Row="2" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
@@ -29,10 +29,10 @@
 						<RowDefinition Height="Auto" />
 						<RowDefinition Height="Auto" />
 					</Grid.RowDefinitions>
-					<Button x:Name="sBooks" Grid.Row="0" Grid.Column="0" BorderWidth="2" BorderColor="Green" BorderRadius="10"  Text="Spiritual Books" Clicked="getBooksView"/>
-					<Button x:Name="hymns" Grid.Row="0" Grid.Column="1"  BorderWidth="2" BorderColor="Maroon" BorderRadius="10"  Text="Coptic Hymns" Clicked="getHymnsView"/>
-					<Button x:Name="sports" Grid.Row="1" Grid.Column="0" BorderWidth="2"  BorderColor="Black" BorderRadius="10"  Text="Sports Books" Clicked="getBooksView"/>
-					<Button x:Name="coptic" Grid.Row="1" Grid.Column="1" BorderWidth="2"  BorderColor="Blue" BorderRadius="10" Text="Coptic Language" Clicked="getBooksView"/>
+					<Button StyleId="sBooks" Grid.Row="0" Grid.Column="0" BorderWidth="2" BorderColor="Green" BorderRadius="10"  Text="Spiritual Books" Clicked="getBooksView"/>
+					<Button StyleId="hymns" Grid.Row="0" Grid.Column="1"  BorderWidth="2" BorderColor="Maroon" BorderRadius="10"  Text="Coptic Hymns" Clicked="getHymnsView"/>
+					<Button StyleId="sports" Grid.Row="1" Grid.Column="0" BorderWidth="2"  BorderColor="Black" BorderRadius="10"  Text="Guidelines" Clicked="getGuidelinesView"/>
+					<Button StyleId="coptic" Grid.Row="1" Grid.Column="1" BorderWidth="2"  BorderColor="Blue" BorderRadius="10" Text="Coptic Language" Clicked="getBooksView"/>
 				</Grid>
 				</StackLayout>
 		</Grid>
