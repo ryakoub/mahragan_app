@@ -37,6 +37,9 @@
     <WarningLevel>4</WarningLevel>
     <AndroidManagedSymbols>true</AndroidManagedSymbols>
     <AndroidUseSharedRuntime>false</AndroidUseSharedRuntime>
+    <MandroidI18n>mideast</MandroidI18n>
+    <AndroidSupportedAbis>armeabi-v7a</AndroidSupportedAbis>
+    <EnableProguard>true</EnableProguard>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -104,13 +107,13 @@
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
     <AndroidResource Include="Resources\layout\Toolbar.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
-    <AndroidResource Include="Resources\drawable\icon.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
     <AndroidResource Include="..\Assets\StMark_WM.jpg">
       <Link>Resources\drawable\StMark_WM.jpg</Link>
     </AndroidResource>
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\pdfjs\.DS_Store" />
@@ -488,6 +491,10 @@
     <AndroidAsset Include="Assets\PDFBooks\04_Gr_5_6_Final_2016.pdf" />
     <AndroidAsset Include="Assets\PDFBooks\05_Gr_7_8_Final_2016.pdf" />
     <AndroidAsset Include="Assets\PDFBooks\06_Gr_9_12_Final_2016.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\drawable-hdpi\" />
+    <Folder Include="Resources\drawable-xhdpi\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
