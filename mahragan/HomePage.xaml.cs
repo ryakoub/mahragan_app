@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Net;
 using Xamarin.Forms;
 
 namespace mahragan
@@ -52,5 +52,34 @@ namespace mahragan
 		async void getBooksView(object sender, EventArgs e) { await Navigation.PushAsync(new SpiritualBooksPage()); }
 		async void getHymnsView(object sender, EventArgs e) { await Navigation.PushAsync(new HymnsPage()); }
 		async void getGuidelinesView(object sender, EventArgs e) { await Navigation.PushAsync(new GuidelinesPage()); }
+		/*
+		async void getPDF(object sender, EventArgs e)
+		{
+			Uri uri = new Uri("http://www.stgeorgestjoseph.ca/Downloads/Kiahk_Psalmody_2007_final.pdf");
+
+			if (Device.OS == TargetPlatform.Android)
+			{
+				using (var clientHandler = new System.Net.Http.HttpClientHandler())
+				{
+					using (var httpClient = new System.Net.Http.HttpClient(clientHandler))
+					{
+						httpClient.BaseAddress = uri;
+						byte[] bytes = await httpClient.GetByteArrayAsync(uri);
+						var service = Xamarin.Forms.DependencyService.Get<mahragan.DependencyService.IDownloadSD>();
+
+						string fullPathToSavedFile;
+						service.Save(
+												 String.Format("{0}.pdf", System.Guid.NewGuid().ToString("N")), //String.Format("{0} Resume.pdf", model.Type),
+													bytes,
+													out fullPathToSavedFile
+													);
+
+						uri = new Uri(String.Format("file://{0}", fullPathToSavedFile));
+					}
+				}
+			}
+			Device.OpenUri(uri);
+		}
+		*/
 	}
 }

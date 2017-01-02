@@ -49,15 +49,28 @@ namespace mahragan
 
 	public class CustomWebView : WebView
 	{
+		public CustomWebView() { }
+		public string Name;
+		public string Uri
+
+		{
+			get { return (string)GetValue(UriProperty); }
+			set { SetValue(UriProperty, value); }
+		}
+
+		public CustomWebView(string name, string uriName)
+		{
+			this.Uri = uriName;
+			this.Name = name;
+		}
 		public static readonly BindableProperty UriProperty = BindableProperty.Create(propertyName: "Uri",
 						returnType: typeof(string),
 						declaringType: typeof(CustomWebView),
 						defaultValue: default(string));
 
-		public string Uri
+		public override string ToString()
 		{
-			get { return (string)GetValue(UriProperty); }
-			set { SetValue(UriProperty, value); }
+			return Name;
 		}
 	}
 }

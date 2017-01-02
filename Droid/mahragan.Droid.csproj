@@ -25,7 +25,6 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidLinkMode>None</AndroidLinkMode>
     <MandroidI18n>mideast</MandroidI18n>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -107,13 +106,34 @@
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
     <AndroidResource Include="Resources\layout\Toolbar.axml" />
     <AndroidResource Include="Resources\values\styles.xml" />
-    <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
     <AndroidResource Include="..\Assets\StMark_WM.jpg">
       <Link>Resources\drawable\StMark_WM.jpg</Link>
     </AndroidResource>
     <AndroidResource Include="Resources\drawable\Icon.png" />
-    <AndroidResource Include="Resources\drawable-hdpi\Icon.png" />
-    <AndroidResource Include="Resources\drawable-xhdpi\Icon.png" />
+    <AndroidResource Include="..\Assets\stMary.gif">
+      <Link>Resources\drawable\stMary.gif</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\Assets\guidelines.png">
+      <Link>Resources\drawable\guidelines.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\Assets\alpha.png">
+      <Link>Resources\drawable\alpha.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\Assets\hymns_icon.png">
+      <Link>Resources\drawable\hymns_icon.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\Assets\iOS_images\Midwest_logo\android\mipmap-hdpi\ic_launcher.png">
+      <Link>Resources\drawable-hdpi\ic_launcher.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\Assets\iOS_images\Midwest_logo\android\mipmap-xhdpi\ic_launcher.png">
+      <Link>Resources\drawable-xhdpi\ic_launcher.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="..\Assets\iOS_images\Midwest_logo\android\mipmap-xxhdpi\ic_launcher.png">
+      <Link>Resources\drawable-xxhdpi\ic_launcher.png</Link>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\spiritualBooks" />
+    <AndroidResource Include="Resources\drawable\Midwest_logo.png" />
+    <AndroidResource Include="Resources\drawable\cymbalsicon.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\pdfjs\.DS_Store" />
@@ -491,6 +511,30 @@
     <AndroidAsset Include="Assets\PDFBooks\04_Gr_5_6_Final_2016.pdf" />
     <AndroidAsset Include="Assets\PDFBooks\05_Gr_7_8_Final_2016.pdf" />
     <AndroidAsset Include="Assets\PDFBooks\06_Gr_9_12_Final_2016.pdf" />
+    <AndroidAsset Include="..\Assets\guidelines\Video-Clip-Guidelines-2016.pdf">
+      <Link>Assets\PDFBooks\Video-Clip-Guidelines-2016.pdf</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\Assets\guidelines\Volleyball-Guidelines-2016.pdf">
+      <Link>Assets\PDFBooks\Volleyball-Guidelines-2016.pdf</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\Assets\guidelines\Research-Paper-Guidelines-2016.pdf">
+      <Link>Assets\PDFBooks\Research-Paper-Guidelines-2016.pdf</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\Assets\guidelines\Soccer-Guidelines-2016.pdf">
+      <Link>Assets\PDFBooks\Soccer-Guidelines-2016.pdf</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\Assets\guidelines\Ping-Pong-Guidelines-2016.pdf">
+      <Link>Assets\PDFBooks\Ping-Pong-Guidelines-2016.pdf</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\Assets\guidelines\Multimedia-Guidelines-2016.pdf">
+      <Link>Assets\PDFBooks\Multimedia-Guidelines-2016.pdf</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\Assets\guidelines\Creative-Writing-Guidelines-2016.pdf">
+      <Link>Assets\PDFBooks\Creative-Writing-Guidelines-2016.pdf</Link>
+    </AndroidAsset>
+    <AndroidAsset Include="..\Assets\guidelines\Basketball-Guidelines-2016.pdf">
+      <Link>Assets\PDFBooks\Basketball-Guidelines-2016.pdf</Link>
+    </AndroidAsset>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />

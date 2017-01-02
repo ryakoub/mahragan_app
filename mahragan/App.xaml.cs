@@ -8,7 +8,7 @@ namespace mahragan
 		{
 			InitializeComponent();
 
-			MainPage = new NavigationPage(new HomePage());
+			MainPage = new mahragan.MainPage();
 		}
 
 		protected override void OnStart()

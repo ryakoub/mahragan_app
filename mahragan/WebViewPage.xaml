@@ -5,6 +5,6 @@
 		x:Class="mahragan.WebViewPage"
 		Padding="0,20,0,0">
 	<ContentPage.Content>
-		<local:CustomWebView x:Name="PDFFileName" Uri="01_Kindergarten_Final_2016.pdf" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+		<local:CustomWebView x:Name="PDFFileName" Uri="Basketball-Guidelines-2016.pdf" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
 	</ContentPage.Content>
 </ContentPage>

@@ -1,7 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="mahragan.GuidelinesPage"		
-		Title="Guidelines" BackgroundImage="StMark_WM.jpg" >
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		local="clr-namespace:mahragan;assembly=GuidelinesPage"
+		x:Class="mahragan.GuidelinesPage"		
+		Title="Guidelines" 
+		BackgroundImage="StMark_WM.jpg" >
 
-	<ContentPage.Content>
-	</ContentPage.Content>
-</ContentPage>
+</MasterDetailPage>
+

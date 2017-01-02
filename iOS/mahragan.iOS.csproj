@@ -18,7 +18,7 @@
     <DefineConstants>DEBUG;ENABLE_TEST_CLOUD;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Developer: Refaat Yakoub (63EH7TC7FF)</CodesignKey>
     <MtouchDebug>true</MtouchDebug>
     <MtouchFastDev>true</MtouchFastDev>
     <MtouchUseSGen>true</MtouchUseSGen>
@@ -30,6 +30,7 @@
     <MtouchTlsProvider>Default</MtouchTlsProvider>
     <PlatformTarget>x86</PlatformTarget>
     <MtouchI18n>mideast</MtouchI18n>
+    <CodesignProvision>0c6f844c-4761-4b71-9ba7-7f5ff3cf2a8c</CodesignProvision>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
     <DebugType>pdbonly</DebugType>
@@ -112,6 +113,22 @@
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json" />
     <ImageAsset Include="Assets.xcassets\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\LaunchImage.launchimage\Contents.json" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-29x29%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-40x40%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-57x57%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-57x57%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-60x60%403x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-72x72%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-72x72%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%401x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-76x76%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-83.5x83.5%402x.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Icon-App-20x20%402x.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -130,9 +147,6 @@
     <Compile Include="AppDelegate.cs" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="..\Assets\st-mark---whole-icon.jpg">
-      <Link>Resources\st-mark---whole-icon.jpg</Link>
-    </BundleResource>
     <BundleResource Include="..\Assets\StMark_WM.jpg">
       <Link>Resources\StMark_WM.jpg</Link>
     </BundleResource>
@@ -169,6 +183,49 @@
     <BundleResource Include="..\Assets\stMary.gif">
       <Link>Resources\stMary.gif</Link>
     </BundleResource>
+    <BundleResource Include="..\Assets\guidelines\index.html">
+      <Link>Resources\PDFBooks\index.html</Link>
+    </BundleResource>
+    <BundleResource Include="..\Assets\guidelines\Video-Clip-Guidelines-2016.pdf">
+      <Link>Resources\PDFBooks\Video-Clip-Guidelines-2016.pdf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Assets\guidelines\Volleyball-Guidelines-2016.pdf">
+      <Link>Resources\PDFBooks\Volleyball-Guidelines-2016.pdf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Assets\guidelines\Research-Paper-Guidelines-2016.pdf">
+      <Link>Resources\PDFBooks\Research-Paper-Guidelines-2016.pdf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Assets\guidelines\Soccer-Guidelines-2016.pdf">
+      <Link>Resources\PDFBooks\Soccer-Guidelines-2016.pdf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Assets\guidelines\Ping-Pong-Guidelines-2016.pdf">
+      <Link>Resources\PDFBooks\Ping-Pong-Guidelines-2016.pdf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Assets\guidelines\Multimedia-Guidelines-2016.pdf">
+      <Link>Resources\PDFBooks\Multimedia-Guidelines-2016.pdf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Assets\guidelines\Creative-Writing-Guidelines-2016.pdf">
+      <Link>Resources\PDFBooks\Creative-Writing-Guidelines-2016.pdf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Assets\guidelines\Basketball-Guidelines-2016.pdf">
+      <Link>Resources\PDFBooks\Basketball-Guidelines-2016.pdf</Link>
+    </BundleResource>
+    <BundleResource Include="..\Assets\Icon.png">
+      <Link>Resources\Icon.png</Link>
+    </BundleResource>
+    <BundleResource Include="Resources\MB__home.png" />
+    <BundleResource Include="Resources\multimediaicon.png" />
+    <BundleResource Include="Resources\Table_tennis-512.png" />
+    <BundleResource Include="Resources\volleyball_icon.jpg" />
+    <BundleResource Include="Resources\Artua-Soccer-Football.ico" />
+    <BundleResource Include="Resources\basketball.ico" />
+    <BundleResource Include="Resources\spiritualBooks" />
+    <BundleResource Include="Resources\guidelines.jpeg" />
+    <BundleResource Include="Resources\hymns.jpeg" />
+    <BundleResource Include="Resources\paper.jpeg" />
+    <BundleResource Include="Resources\cymbalsicon.jpg" />
+    <BundleResource Include="Resources\Midwest_logo.png" />
+    <BundleResource Include="Resources\menu.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.3.175\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.3.175\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

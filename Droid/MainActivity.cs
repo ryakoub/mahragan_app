@@ -43,9 +43,17 @@ namespace mahragan.Droid
 			{
 				var customWebView = Element as CustomWebView;
 				Control.Settings.AllowUniversalAccessFromFileURLs = true;
-				string pdfFileName = string.Format("file:///android_asset/PDFBooks/{0}", WebUtility.UrlEncode(customWebView.Uri));
-				string urlFileName = string.Format("file:///android_asset/pdfjs/web/viewer.html?file={0}", pdfFileName);
-				Control.LoadUrl(urlFileName);
+				string url = WebUtility.UrlEncode(customWebView.Uri);
+				if (url.EndsWith("html"))
+				{
+					Control.LoadUrl(string.Format("file:///android_asset/PDFBooks/{0}", url));
+				}
+				else {
+					string pdfFileName = string.Format("file:///android_asset/PDFBooks/{0}", url);
+					string urlFileName = string.Format("file:///android_asset/pdfjs/web/viewer.html?file={0}", pdfFileName);
+					Control.LoadUrl(urlFileName);
+				}
+
 			}
 		}
 	}

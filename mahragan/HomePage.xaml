@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="mahragan.HomePage"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="mahragan.HomePage"
 		Title="Home" BackgroundImage="StMark_WM.jpg" >
+	
 	<ContentPage.Content>
 		<AbsoluteLayout x:Name="absoluteLOforHeader">
 		<Grid RowSpacing="1" ColumnSpacing="1" AbsoluteLayout.LayoutBounds="0, 0.4, 1, 0.6" AbsoluteLayout.LayoutFlags="All">
@@ -41,8 +44,9 @@
 					<Button StyleId="sBooks" Image="stMary.gif" BorderRadius="15" Grid.Row="0" Grid.Column="1" BorderWidth="2" BackgroundColor="Silver" BorderColor="White" Clicked="getBooksView"/>
 					<Button StyleId="hymns" Image="hymns_icon" Grid.Row="0" Grid.Column="2" BorderWidth="2" BackgroundColor="White" BorderColor="White" BorderRadius="15"  Clicked="getHymnsView"/>
 					<Button StyleId="sports" Image="guidelines" Grid.Row="3" Grid.Column="1" BorderWidth="2"  BorderColor="Silver"  BackgroundColor="Silver" BorderRadius="15"   Clicked="getGuidelinesView"/>
-					<Button StyleId="coptic" Image="alpha" Grid.Row="3" Grid.Column="2" BorderWidth="2" BackgroundColor="White" BorderColor="White" BorderRadius="15" Clicked="getBooksView"/>
+					<Button StyleId="coptic" Image="alpha" Grid.Row="3" Grid.Column="2" BorderWidth="2" BackgroundColor="White" BorderColor="White" BorderRadius="15" Clicked="getGuidelinesView"/>
 				</Grid>
+
 				</StackLayout>
 		</Grid>
 			
